@@ -1,0 +1,8 @@
+/Users/jamesbowler/esp32/build/CMakeFiles/esp32_camera_viewer.dir
+/Users/jamesbowler/esp32/build/CMakeFiles/esp32_serial_camera_viewer.dir
+/Users/jamesbowler/esp32/build/CMakeFiles/serial_saver.dir
+/Users/jamesbowler/esp32/build/CMakeFiles/test_find_light.dir
+/Users/jamesbowler/esp32/build/CMakeFiles/red_light_box_center_test.dir
+/Users/jamesbowler/esp32/build/CMakeFiles/end_to_end.dir
+/Users/jamesbowler/esp32/build/CMakeFiles/edit_cache.dir
+/Users/jamesbowler/esp32/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,107 @@
+# ESP32 Camera Viewer
+
+This repo contains:
+
+- `esp32_serial_camera_viewer`: native macOS C++ viewer for JPEG frames over serial
+- `esp32_camera_viewer`: native macOS C++ viewer for HTTP MJPEG streams
+- `serial_saver`: native macOS C++ serial packet receiver that saves images into `trafficimages/`
+- `arduino/esp32_serial_camera_sender`: Arduino sketch that either sends camera JPEG frames over serial or runs on-device traffic-light detection
+
+## Desktop build
+
+Requirements:
+
+- CMake
+- OpenCV
+
+Build:
+
+```bash
+cmake -S . -B build
+cmake --build build
+```
+
+## Arduino project
+
+Open this sketch in Arduino IDE:
+
+```text
+arduino/esp32_serial_camera_sender/esp32_serial_camera_sender.ino
+```
+
+Default target board profile is **Seeed Studio XIAO ESP32S3 Sense**. If your hardware is different, edit:
+
+```text
+arduino/esp32_serial_camera_sender/camera_pins.h
+```
+
+Key camera and serial settings live in:
+
+```text
+arduino/esp32_serial_camera_sender/config.h
+```
+
+If you are using an OV5640 autofocus module, also install the Arduino library `OV5640 Auto Focus for ESP32 Camera`. The sketch enables autofocus automatically when that library is available.
+
+Traffic-light detection currently runs entirely on the ESP32-S3 using RGB565 frames and heuristic color/blob logic. It reports the red lamp location plus an inferred green-lamp ROI every 500 ms.
+
+Optional debug MJPEG streaming is available over Wi-Fi. Enable it in [config.h](/Users/jamesbowler/esp32/arduino/esp32_serial_camera_sender/config.h) by setting:
+
+- `kEnableDebugMjpegStream = true`
+- `kWifiSsid`
+- `kWifiPassword`
+
+Debug endpoints:
+
+- `/stream` for MJPEG
+- `/capture` for a single JPEG
+- `/status` for JSON detector status
+
+This is intended for debugging only and can be disabled cleanly without affecting the main detector flow.
+
+When the ESP32 finds a red light, it also sends two packetized JPEG images over serial:
+
+- the full frame where the red light was found
+- the inferred green-light ROI
+
+Build and run the image saver:
+
+```bash
+cmake -S . -B build
+cmake --build build --target serial_saver
+./build/serial_saver --device /dev/cu.usbmodem1101
+```
+
+Saved images are written to:
+
+```text
+trafficimages/
+```
+
+## Serial run
+
+Find the serial device:
+
+```bash
+ls /dev/cu.*
+```
+
+Run the macOS viewer:
+
+```bash
+./build/esp32_serial_camera_viewer --device /dev/cu.usbmodem1101 --baud 921600
+```
+
+Press `q` to quit.
+
+Do not open Serial Monitor at the same time.
+
+If camera init fails on your ESP32-S3 board, the usual cause is a mismatched camera pin map rather than a desktop-side issue.
+
+## HTTP run
+
+For boards serving the standard CameraWebServer endpoint:
+
+```bash
+./build/esp32_camera_viewer http://<esp32-ip>/stream
+```

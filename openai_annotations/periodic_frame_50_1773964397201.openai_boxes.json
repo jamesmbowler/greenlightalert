@@ -1,0 +1,17 @@
+{
+  "image": "periodic_frame_50_1773964397201.jpg",
+  "width": 1280,
+  "height": 1024,
+  "model": "gpt-4.1-mini",
+  "boxes": [
+    {
+      "label": "traffic_light",
+      "x": 64,
+      "y": 163,
+      "width": 65,
+      "height": 163,
+      "confidence": 0.75
+    }
+  ],
+  "response_id": "resp_01b2c2cd528391c30069bd6d61f2b4819796808e7bb6befca0"
+}

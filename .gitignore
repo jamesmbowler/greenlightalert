@@ -1,0 +1,63 @@
+jbowler*
+app/.gradle/
+app/composeApp/build/
+trafficimages
+dataset
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# C / C++ / CMake
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+Makefile
+cmake_install.cmake
+Testing/
+CTestTestfile.cmake
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+*.out
+*.exe
+
+# Android / Gradle / Kotlin
+.gradle/
+local.properties
+captures/
+**/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Android Studio / IntelliJ metadata
+*.iml
+*.ipr
+*.iws
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+
+# Arduino / embedded generated files
+*.bin
+*.elf
+*.map

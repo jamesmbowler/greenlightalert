@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "type": "bounding-box-labels",
+  "boundingBoxes": {
+    "periodic_frame_11_1773963897258.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 622,
+        "y": 606,
+        "width": 36,
+        "height": 19
+      }
+    ],
+    "red_frame_ei_16_1773963961386.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 501,
+        "y": 721,
+        "width": 24,
+        "height": 24
+      }
+    ],
+    "red_frame_ei_17_1773963974195.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 478,
+        "y": 698,
+        "width": 24,
+        "height": 24
+      }
+    ],
+    "periodic_frame_22_1773978296729.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 537,
+        "y": 512,
+        "width": 27,
+        "height": 26
+      }
+    ],
+    "periodic_frame_23_1773934375403.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 693,
+        "y": 445,
+        "width": 19,
+        "height": 19
+      }
+    ],
+    "periodic_frame_24_1773934388208.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 675,
+        "y": 535,
+        "width": 19,
+        "height": 19
+      }
+    ],
+    "red_frame_ei_27_1773978360832.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 568,
+        "y": 714,
+        "width": 19,
+        "height": 19
+      }
+    ],
+    "red_frame_ei_31_1773978411624.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 532,
+        "y": 624,
+        "width": 19,
+        "height": 37
+      }
+    ],
+    "periodic_frame_36_1773934540225.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 532,
+        "y": 678,
+        "width": 19,
+        "height": 19
+      }
+    ],
+    "periodic_frame_38_1773964243415.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 742,
+        "y": 512,
+        "width": 26,
+        "height": 26
+      }
+    ],
+    "red_frame_ei_39_1773978513983.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 622,
+        "y": 445,
+        "width": 18,
+        "height": 19
+      }
+    ],
+    "red_frame_ei_3_1773963402801.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 570,
+        "y": 445,
+        "width": 24,
+        "height": 24
+      }
+    ],
+    "red_frame_ei_42_1773964294687.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 409,
+        "y": 353,
+        "width": 24,
+        "height": 47
+      }
+    ],
+    "red_frame_ei_4_1773963415619.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 570,
+        "y": 445,
+        "width": 24,
+        "height": 24
+      }
+    ],
+    "red_frame_ei_5_1773963428435.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 570,
+        "y": 445,
+        "width": 24,
+        "height": 47
+      }
+    ],
+    "red_frame_ei_9_1773978126217.jpg": [
+      {
+        "label": "traffic_light",
+        "x": 693,
+        "y": 714,
+        "width": 19,
+        "height": 19
+      }
+    ]
+  }
+}

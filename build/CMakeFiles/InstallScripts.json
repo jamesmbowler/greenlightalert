@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/jamesbowler/esp32/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

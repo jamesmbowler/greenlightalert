@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "ESP32-S3",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/jamesbowler/Library/Arduino15/packages/esp32/hardware/esp32/3.3.7/cores/esp32",
+                "/Users/jamesbowler/Library/Arduino15/packages/esp32/hardware/esp32/3.3.7/libraries/**",
+                "/Users/jamesbowler/Library/Arduino15/packages/esp32/tools/esp32s3-libs/3.3.7/include/**",
+                "/Users/jamesbowler/Documents/Arduino/libraries/**"
+            ],
+            "defines": [
+                "ARDUINO=10819",
+                "ARDUINO_ESP32S3_DEV",
+                "ESP32",
+                "ESP_PLATFORM",
+                "CONFIG_IDF_TARGET_ESP32S3"
+            ],
+            "compilerPath": "/Users/jamesbowler/Library/Arduino15/packages/esp32/tools/esp-x32/2511/bin/xtensa-esp32s3-elf-g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
