@@ -1,4 +1,14 @@
-# ESP32 Camera Viewer
+# ESP32 Project for detecting a Light change from Red to Green
+
+# Purpose
+- I don't like having to watch a red light until it turns green, so I made the green light alert. As of now, it sends me an alert over bluetooth when the light turns green. It's using Edge Impulse.
+
+#Hardware needed ( so far )
+- [esp32s3 sense](https://www.amazon.com/Seeed-Studio-XIAO-ESP32-Sense/dp/B0C69FFVHH) 
+- [A basic on/off switch](https://www.amazon.com/dp/B0DLBD4X2B)
+- [A liPo battery like this](https://www.amazon.com/dp/B08FD39Y5R)
+- 
+
 
 This repo contains:
 
@@ -97,11 +107,3 @@ Press `q` to quit.
 Do not open Serial Monitor at the same time.
 
 If camera init fails on your ESP32-S3 board, the usual cause is a mismatched camera pin map rather than a desktop-side issue.
-
-## HTTP run
-
-For boards serving the standard CameraWebServer endpoint:
-
-```bash
-./build/esp32_camera_viewer http://<esp32-ip>/stream
-```
