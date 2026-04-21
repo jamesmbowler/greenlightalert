@@ -1,6 +1,7 @@
 # ESP32 Project for detecting a Light change from Red to Green
 
 # Purpose
+- Check out the [video](https://youtube.com/shorts/Ix7TiHLy53g) of it in action 
 - I don't like having to watch a red light until it turns green, so I made the green light alert. As of now, it sends me an alert over bluetooth when the light turns green. It's using Edge Impulse.
 
 #Hardware needed ( so far )
