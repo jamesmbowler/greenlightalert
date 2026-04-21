@@ -7,8 +7,7 @@
 - [esp32s3 sense](https://www.amazon.com/Seeed-Studio-XIAO-ESP32-Sense/dp/B0C69FFVHH) 
 - [A basic on/off switch](https://www.amazon.com/dp/B0DLBD4X2B)
 - [A liPo battery like this](https://www.amazon.com/dp/B08FD39Y5R)
-- 
-
+- An android phone (for now)
 
 This repo contains:
 
